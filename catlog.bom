@@ -1,0 +1,11 @@
+brooklyn.catalog:
+  brooklyn.libraries:
+  - file:///tmp/osgi-test-0.1.0-SNAPSHOT.jar
+  items:
+  - id: use-from-my-catalog
+    version: "1.0.0"
+    itemType: entity
+    item:
+      type: com.acme.MySample
+      brooklyn.config:
+        some.config: "some value"
